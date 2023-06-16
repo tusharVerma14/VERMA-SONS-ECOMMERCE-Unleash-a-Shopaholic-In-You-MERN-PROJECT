@@ -1,0 +1,36 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+import { Rating } from '@material-ui/lab'
+
+const ProductCard = ({ product }) => {
+  const options = {
+    size: "medium",
+    value: product.ratings,
+    readOnly: true,
+    precision: 0.1
+  }
+  return (
+    // lInk Tag will help to generate path on url (by clicking on element inside Link Tags)and actullay where to go is decided based upton route on that particular path
+    <Link className="productCard" to={`product/${product._id}`}>
+
+      <img src={product.images[0].url} alt={product.name} />
+      <p>{product.name} </p>
+      <div>
+        
+
+          <Rating {...options} />
+
+
+
+
+
+        <span className='productCardspan'>({product.noOfReviews}  Reviews)</span>
+      </div>
+      <span>₹ {product.price}</span>
+    </Link>
+  )
+}
+
+export default ProductCard
+

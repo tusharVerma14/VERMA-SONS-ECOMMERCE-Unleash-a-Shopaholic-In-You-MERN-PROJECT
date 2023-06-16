@@ -1,0 +1,104 @@
+.contact-form {
+  /* max-width: 400px; */
+  margin-left: 40px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  width: 30%;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh
+}
+
+.mapStyling {
+  background-color: #f2f2f2;
+  padding: 0.5vw;
+  border-radius: 5px;
+  border: 2px solid black;
+
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type='submit'] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: #f15f10;
+}
+
+@media screen and (max-width: 600px) {
+  .main-div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    margin-top: 10vh;
+
+
+
+  }
+
+
+  .mapStyling {
+    width: 90%;
+    height: auto;
+    margin-left:0;
+    border:none;
+    overflow: hidden;
+  }
+
+  .contact-form {
+
+    width: 90%;
+
+    border:none;
+    margin-left: 0;
+    /* align-items: center; */
+    justify-content: flex-start;
+  }
+
+}
